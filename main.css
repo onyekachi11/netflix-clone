@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+
+    /* primary color */
+    --red: #E50914;
+    --black: #000000;
+    --white: #ffffff;
+
+    /* secondary */
+    --grey-1: #BCBCBC;
+    --grey-2: #999999;
+    --grey-3: #757575;
+    --grey-4: #303030;
+    --grey-5: #222222;
+
+    /* button */
+    --hover: #F40612;
+
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--black);
+    color: var(--white);
+    /* padding: 0 20px; */
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 43.75%, rgba(0, 0, 0, 0.9) 100%), url(./img/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px;;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-right: 56px;
+    
+}
+
+.header-link{
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    width: 167px;
+    padding-left: 35px;
+}
+
+.language-btn{
+    color: var(--white);
+    background-color: var(--grey-5);
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right:32px ;
+}
+.signin-btn{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 7px 16px;
+    font-size: 16px ;
+    border-radius: 5px;
+    border: none;
+}
+
+.hero-section{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.hero-section h1{
+    font-size: 50px;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+}
+.first-p{
+    font-size: 26px;
+    margin-top: 10px;
+}
+.second-p{
+    margin-top: 30px;
+    font-size: 19px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+input{
+    width: 500px;
+    padding: 20px 0;
+    padding-left: 10px;
+    border: none;
+}
+.hero-btn{
+    width: 200px;
+    padding: 15px 0;
+    padding-bottom: 18px;
+    font-size: 19px;
+    color: var(--white);
+    background-color: var(--red);
+    border: none;
+}
