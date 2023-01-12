@@ -29,6 +29,11 @@ img{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
 body{
     font-family: 'Roboto';
     background-color: var(--black);
@@ -119,4 +124,113 @@ input{
     color: var(--white);
     background-color: var(--red);
     border: none;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 90px;
+    margin-bottom: 20px;
+}
+.value-prop-img{
+    width: 530px;
+}
+
+.value-prop-text h3{
+    font-size: 50px;
+    font-weight: 500;
+}
+.value-prop-text p{
+    font-size: 26px;
+    font-weight: 300;
+    width: 500px;
+    margin-top: 20px;
+}
+.rotate{
+    flex-direction: row-reverse;
+}
+.border-line{
+    border-bottom: 9px solid var(--grey-5);
+}
+
+.faqs{
+    flex-direction: column;
+}
+
+.faqs h2{
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.faqs-text p{
+    background-color: var(--grey-4);
+    font-size: 26px;
+    width: 800px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.faqs-text{
+    margin-bottom: 60px ;
+}
+
+.close{
+    float: right;
+}
+
+.add{
+    float: right;
+}
+
+p .close{
+    display: none;
+}
+
+/* p .add{
+    display: none;
+} */
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer .row {
+    display: flex;
+    padding: 10px 0;
+}
+
+.footer .language-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
