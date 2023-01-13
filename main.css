@@ -40,6 +40,12 @@ a {
     padding-left: 25px;
 }
 
+button:hover{
+    background-color: var(--hover);
+}
+.email button:hover{
+    background-color: var(--hover);
+}
 body {
     font-family: 'Roboto';
     background-color: var(--black);

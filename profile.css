@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+
+    /* primary color */
+    --red: #E50914;
+    --black: #000000;
+    --white: #ffffff;
+
+    /* secondary */
+    --grey-1: #BCBCBC;
+    --grey-2: #999999;
+    --grey-3: #757575;
+    --grey-4: #303030;
+    --grey-5: #222222;
+
+    /* button */
+    --hover: #F40612;
+
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey-4);
+}
+
+.img-logo {
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: var(--black);
+    color: var(--white);
+} 
+
+.profile-img{
+    width: 200px;
+    margin-right: 50px ;
+    margin-top: 30px;
+}
+
+.profiles{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-images{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+button{
+    width: 250px;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background:none;
+    border: 1px solid var(--grey-4);
+    border-radius: 3px;
+    
+}
+.name{
+    color: var(--grey-4);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.profile-img img:hover{
+    border: 3px solid rgb(74, 127, 226);
+}
+
+button:hover{
+    border: 1px solid var(--grey-1);
+}

@@ -89,6 +89,10 @@ body {
     background-color: var(--red);
 }
 
+.register button:hover{
+    background-color: var(--hover);
+}
+
 .signin-help{
     display: flex;
     justify-content: space-between;
