@@ -57,7 +57,7 @@ header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 43.75%, rgba(0, 0, 0, 0.9) 100%), url(./img/hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     ;
 }
 
@@ -65,8 +65,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 28px;
-    padding-right: 56px;
+    padding-top: 20px;
+    padding-right: 25px;
 }
 
 .header-link {
@@ -381,4 +381,20 @@ p .close {
         /* display: block; */
     }
     
+}
+
+@media screen and (max-width:400px){
+    .hero-btn a{
+        font-size: 13px;
+        width: 200px;
+    }
+
+    .hero-btn{
+        width: 100px;
+    }
+
+    .signin-btn{
+        margin-left: 150px;
+    }
+
 }
