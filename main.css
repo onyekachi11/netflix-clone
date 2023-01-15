@@ -73,7 +73,7 @@ header {
     display: flex;
     align-items: center;
     visibility: visible;
-    display: none;
+    /* display: none; */
 }
 
 .language-btn {
@@ -83,6 +83,7 @@ header {
     font-size: 14px;
     border-radius: 3px;
     margin-right: 32px;
+    display: none;
 }
 
 .signin-btn {
@@ -141,6 +142,10 @@ header {
     border-radius: 2px;
 }
 
+.email a {
+    font-size: 18px;
+}
+
 section {
     display: flex;
     justify-content: space-around;
@@ -180,17 +185,61 @@ section {
     margin-top: 70px;
 }
 
-.faqs-text p {
-    background-color: var(--grey-4);
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 20px;
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
 }
 
-.faqs-text{
+.accordion li {
+    list-style: none;
     width: 100%;
-    margin-top: 20px;
+    padding: 5px;
 }
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
 
 .close, .add{
     float: right;
@@ -282,6 +331,9 @@ p .close {
     .rotate{
         flex-direction: row-reverse;
     }
+        .language-btn {
+            display: block;
+        }
 
    
 }
@@ -311,6 +363,8 @@ p .close {
         width: 200px;
         font-size: 20px;
     }
+
+    
     .value-prop-text h3 {
         font-size: 50px;
     }
@@ -323,6 +377,8 @@ p .close {
     }
         
     .signin-btn,.language-btn {
-        font-size: 21px;
+        font-size: 19px;
+        /* display: block; */
     }
+    
 }
